@@ -548,6 +548,7 @@ public enum MetaTileEntityIDs {
     Industrial_Electrolyzer(796),
     Industrial_MacerationStack(797),
     Industrial_WireFactory(798),
+    Isoflux_WireMatrix(800),
     Industrial_MassFab(799),
     Industrial_AlloyBlastSmelter(810),
     Industrial_Mixer(811),

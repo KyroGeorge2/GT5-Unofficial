@@ -178,6 +178,9 @@ public enum GregtechItemList implements IGregtechItemContainer {
     Industrial_WireFactory,
     Casing_WireFactory,
 
+    //Isoflux Wire Matrix
+    Isoflux_WireMatrix,
+
     // Power sub-station for mass storage. 3 hatches for input and output, whatever voltages you desire.
     PowerSubStation,
     Casing_Vanadium_Redox,

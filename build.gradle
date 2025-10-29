@@ -4,6 +4,17 @@ plugins {
     id 'com.gtnewhorizons.gtnhconvention'
 }
 
+// Extra mirrors to fetch legacy MC/LWJGL deps (libraries.minecraft.net is flaky in some regions)
+allprojects {
+    repositories {
+        maven { url = 'https://repo.spongepowered.org/maven' }
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://jitpack.io' }
+        maven { url = 'https://repo1.maven.org/maven2/' }
+        // keep anything the plugin adds too
+    }
+}
+
 // workaround an OOM on GH actions during the checkStyleMain task
 tasks.withType(Checkstyle).configureEach {
     maxHeapSize = "1g"
